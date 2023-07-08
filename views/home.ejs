@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<h1>home</h1>
+
+<p> <%= homeSC %> </p>
+
+<% for(let i=0; i<publishes.length; i++){ %>
+    <h1> <%= publishes[i].title %> </h1>
+    <p> <%= publishes[i].text %> <a href="/posts/<%=publishes[i].title%>"> Read more</a> </p>
+<% } %>
+
+
+
+<%- include("partials/footer") %>
